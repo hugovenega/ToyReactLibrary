@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { Person } from '../components/Person/Person'
 
 export default function Home() {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <Person person={{fullName: "Hugo",id: 1, imgUrl: "https://avatars.githubusercontent.com/u/86172480?v=4", occupation: "Dev"}} />
       </main>
 
       <footer className={styles.footer}>
